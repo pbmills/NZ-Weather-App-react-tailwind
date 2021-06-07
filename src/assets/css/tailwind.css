@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loader {
+    border-top-color: #4f46e5;
+    -webkit-animation: spinner 1.5s linear infinite;
+    animation: spinner 1.5s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/** Slick Js **/
+.slick-arrow.slick-prev {
+    top: 8px;
+    left: 95%;
+    position: absolute;
+}
+
+.slick-arrow.slick-next {
+    top: 8px;
+    right: 10px;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 30px;
+}
+
+.slick-dots {
+    bottom: 0
+}
