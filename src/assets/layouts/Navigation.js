@@ -92,6 +92,34 @@ const Navigation = ({ weather, getWeatherFromLocation }) => {
                   >
                     Today
                   </NavLink>
+                  <NavLink
+                    to={"/hourly"}
+                    activeClassName="text-gray-900"
+                    className="border-transparent text-gray-500 dark:text-gray-200 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-semibold"
+                  >
+                    Hourly
+                  </NavLink>
+                  <NavLink
+                    to={"/days"}
+                    activeClassName="text-gray-900"
+                    className="border-transparent text-gray-500 dark:text-gray-200 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-semibold"
+                  >
+                    7 Days
+                  </NavLink>
+                  {/* <NavLink
+                    to="/monthly"
+                    activeClassName="text-gray-900"
+                    className="border-transparent text-gray-500 dark:text-gray-200 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-semibold"
+                  >
+                    Monthly
+                  </NavLink>
+                  <NavLink
+                    to={"/about"}
+                    activeClassName="text-gray-900"
+                    className="border-transparent text-gray-500 dark:text-gray-200 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-semibold"
+                  >
+                    About
+                  </NavLink> */}
                 </div>
               </div>
               <div className="flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end">
@@ -260,6 +288,30 @@ const Navigation = ({ weather, getWeatherFromLocation }) => {
                 className="border-yellow-500 text-dark dark:text-gray-200 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
               >
                 Today
+              </NavLink>
+              <NavLink
+                to="/hourly"
+                className="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+              >
+                Hourly
+              </NavLink>
+              <NavLink
+                to="/days"
+                className="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+              >
+                7 Days
+              </NavLink>
+              <NavLink
+                to="/monthly"
+                className="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+              >
+                Monthly
+              </NavLink>
+              <NavLink
+                to="/about"
+                className="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+              >
+                About
               </NavLink>
             </div>
             <div className="pt-4 pb-3 border-t border-gray-200">

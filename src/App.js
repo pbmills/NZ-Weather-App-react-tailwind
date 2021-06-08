@@ -7,6 +7,9 @@ import Hourly from "./pages/Hourly";
 
 import store from "./store";
 import MainLayout from "./hoc/MainLayout";
+import Days from "./pages/Days";
+import Monthly from "./pages/Monthly";
+import About from "./pages/About";
 
 const App = () => {
     return (
@@ -17,6 +20,10 @@ const App = () => {
                 <MainLayout>
                     <Switch>
                         <Route path={'/'} exact component={Today}/>
+                        <Route path={'/hourly'} exact component={Hourly}/>
+                        <Route path={'/days'} exact component={Days}/>
+                        <Route path={'/monthly'} exact component={Monthly}/>
+                        <Route path={'/about'} exact component={About}/>
                     </Switch>
                 </MainLayout>
             </Router>
