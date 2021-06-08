@@ -1,6 +1,6 @@
 # NZ Weather App with TaiwindCSS and React
 
-This project has been hosted to Netlify [Project Demo](https://youngshandweatherapp.netlify.app/).
+This project has been hosted to Netlify [Project Demo](https://newzealandweatherapp.netlify.app/).
 
 ## Table of contents
 * [Instructions](#Instructions)
